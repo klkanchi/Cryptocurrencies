@@ -29,6 +29,19 @@ Standardized the dataset so that columns that contain larger values do not undul
 ## Dimensionality Reduction
 
 The PCA algorithm reduces the dimensions of the X DataFrame down to three principal components 
+
 The pcs_df DataFrame is created and has the following three columns, PC 1, PC 2, and PC 3, and has the index from the crypto_df DataFrame 
+
 For the project, preserved 90% of the explained variance in dimensionality reduction.
+
+## Clustering Cryptocurrencies Using K-means 
+
+The K-means algorithm is used to cluster the cryptocurrencies using the PCA data, where the following steps have been completed:
+
+An elbow curve is created using hvPlot to find the best value for K 
+
+Predictions are made on the K clusters of the cryptocurrencies’ data 
+
+A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns:
+Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class 
 

@@ -45,3 +45,12 @@ Predictions are made on the K clusters of the cryptocurrencies’ data
 A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns:
 Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class 
 
+## Visualizing Cryptocurrencies Results
+
+1. The clusters are plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover (10 pt)
+2. A table with tradable cryptocurrencies is created using the hvplot.table() function 
+3. The total number of tradable cryptocurrencies is printed 
+4. A DataFrame is created that contains the clustered_df DataFrame index, the scaled data, and the CoinName and Class columns 
+5. A hvplot scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName when you hover over the data point 
+
+

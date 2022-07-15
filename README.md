@@ -25,3 +25,10 @@ In order for the dataset to be comprehensible to a machine learning algorithm, i
 Converted the remaining features with text values, Algorithm and ProofType, into numerical data. To accomplish this task, used Pandas to create dummy variables.
 
 Standardized the dataset so that columns that contain larger values do not unduly influence the outcome.
+
+## Dimensionality Reduction
+
+The PCA algorithm reduces the dimensions of the X DataFrame down to three principal components 
+The pcs_df DataFrame is created and has the following three columns, PC 1, PC 2, and PC 3, and has the index from the crypto_df DataFrame 
+For the project, preserved 90% of the explained variance in dimensionality reduction.
+
